@@ -222,6 +222,7 @@ Les tests manuels
     var_dump($test); // affiche int(2)
 
     kpr($test); // drupal inside
+    dump($test); // symfony
     ?>
 
 .. note::
@@ -244,8 +245,8 @@ Quels sont les limites de ce type de test ?
 
 ----
 
-Pensez-vous qu'on puisse manuellement ce genre de projet ?
-----------------------------------------------------------
+Pensez-vous qu'on puisse manuellement tester ce genre de projet ?
+-----------------------------------------------------------------
 
 .. image:: images/cloc.png
     
@@ -404,7 +405,7 @@ Définition - Intégration Continue
 =================================
 
     L'intégration continue est un concept qui consiste à intégrer continuellement et automatiquement tout développement sur un serveur d'intégration.
-    Afin d'orchestrer cette automatisation, il existe des serveurs d'intégration continue permettant de configurer cette orchestration fonction de vos besoin.
+    Afin d'orchestrer cette automatisation, il existe des serveurs d'intégration continue permettant de configurer cette orchestration en fonction de vos besoin.
     Il existe un certain nombre de serveur d'intégration continue, les plus connus étant **Jenkins**, **Travis CI** ou encore **Bamboo**.
 
 .. note::
@@ -482,7 +483,7 @@ Définition - Suites de tests
 Définition - Assertions
 =======================
 
-    L’écriture de tests s’occupe de vérifier que le résultat test du test est bien égal à celui attendu.
+    L’écriture de tests s’occupe de vérifier que le résultat testé du test est bien égal à celui attendu.
     Il y a plusieurs méthodes d’assertion disponibles dans PHPUnit pour nous assister dans cette tâche.
     Quelques-unes des assertions les plus courantes sont listées ci-dessous.
 
@@ -655,7 +656,7 @@ Alternative - BDD
 
 En l'occurence::
     * **TDD** = xUnit ;
-    * **BDD** = librairie de test issue de Gherkin
+    * **BDD** = librairie de test pouvant s'appuyer sur le langage Gherkin
 
 .. note::
 
